@@ -1,5 +1,17 @@
 import { combineReducers } from 'redux';
 
+function uidReducer(state = null, action) {
+  switch (action.type) {
+    case 'LOGIN_SUCCEEDED': return action.payload.uid;
+    case 'LOGIN_FAILED': return null;
+    case 'LOGIN_REQUESTED': return null;
+    case 'LOGOUT_REQUESTED': return null;
+    case 'LOGOUT_SUCCEEDED': return null;
+    case 'LOGOUT_FAILED': return null;
+    default: return state;
+  }
+}
+
 function emailReducer(state = null, action) {
   switch (action.type) {
     case 'LOGIN_SUCCEEDED': return action.payload.email;
@@ -50,6 +62,7 @@ function loginFailMessageReducer(state = null, action) {
 }
 
 export default combineReducers({
+  uid: uidReducer,
   email: emailReducer,
   loggedIn: loggedInReducer,
   loginFailed: loginFailedReducer,

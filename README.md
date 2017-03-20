@@ -43,9 +43,9 @@ npm start
 * `FETCH_PLANETS_REQUESTED` - Ved henting av planeter fra API
 * `FETCH_PLANETS_SUCCEEDED` - Når planeter er hentet fra API-et
 * `FETCH_PLANETS_FAILED` - Når API-forespørsel for å hente planeter feiler
-* `POST_COMMENT_REQUESTED` - Ved posting av kommentar til API
-* `POST_COMMENT_SUCCEEDED` - Når kommentar er postet til API-et
-* `POST_COMMENT_FAILED` - Når API-forespørsel for å poste kommentar feiler
+* `POST_REVIEW_REQUESTED` - Ved posting av kommentar til API
+* `POST_REVIEW_SUCCEEDED` - Når kommentar er postet til API-et
+* `POST_REVIEW_FAILED` - Når API-forespørsel for å poste kommentar feiler
 
 Allerede implementerte 
 
@@ -59,6 +59,16 @@ Allerede implementerte
 
 ## Poste kommentar på planet
 `PUT https://starwarstripadvisor.firebaseio.com/planets/1/reviews/{uid}.json`
+
+Request Body:
+
+```js
+{
+  "comment": "Din kommentar", // Må defineres
+  "rating": 3, // Fra 0 til 5
+  "email": "din@epost.no" // Denne må stemme overens med e-post i brukerkontoen din
+}
+```
 
 ## Om oppgavene
 
