@@ -14,6 +14,8 @@ Star Wars Trip Advisor gir brukerne mulighet til å orientere seg i alle planete
 * Brukere skal kunne lese tidligere anmeldelser som er skrevet om planeten.
 * Brukere skal kunne se en gjennomsnittlig rating for en planet basert på anmeldelsene.
 
+Brukerinnlogging mot Firebase er allerede implementert for deg.
+
 ## Oppstart
 
 Kjør følgende kommandoer i prosjektmappen:
@@ -45,6 +47,8 @@ npm start
 * `POST_COMMENT_SUCCEEDED` - Når kommentar er postet til API-et
 * `POST_COMMENT_FAILED` - Når API-forespørsel for å poste kommentar feiler
 
+Allerede implementerte 
+
 ## API-er
 
 ### Alle planeter
@@ -54,7 +58,11 @@ npm start
 `GET https://starwarstripadvisor.firebaseio.com/planets/1.json`
 
 ## Poste kommentar på planet
-`PUT https://starwarstripadvisor.firebaseio.com/planets/1/reviews/{uid}`
+`PUT https://starwarstripadvisor.firebaseio.com/planets/1/reviews/{uid}.json`
+
+## Om oppgavene
+
+Hver oppgave har en veldig overordnet beskrivelse. Det betyr at du har en god del frihet når du skal løse oppgavene. Fellesnevneren for alle oppgavene er imidlertid at du trenger å lage action creators, reducere og Redux-containere. Føl deg fram til det du mener er en fornuftig struktur.
 
 ## Oppgave 1
 
