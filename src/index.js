@@ -7,7 +7,6 @@ import store from './store';
 import App from './App';
 import './index.css';
 import Planets from './planets/Planets';
-import People from './people/People';
 
 const history = syncHistoryWithStore(browserHistory, store);
 
@@ -16,7 +15,7 @@ ReactDOM.render(
     <Router history={history}>
       <Route path="/" component={App}>
         <Route path="planets" component={Planets} />
-        <Route path="people" component={People} />
+        {/* Registrer Planet-komponent under planets/:planetId */}
       </Route>
     </Router>
   </Provider>,

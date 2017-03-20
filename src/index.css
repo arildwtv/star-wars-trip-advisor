@@ -18,3 +18,49 @@ h1, h2, h3 {
 a {
   color: #fff;
 }
+
+input[type=text], input[type=password], textarea {
+  margin-bottom: .5rem;
+  background: #343D51;
+  color: #fff;
+  box-sizing: border-box;
+  width: 100%;
+  padding: .4rem;
+  border: 1px solid #555d71;
+  border-radius: 4px;
+  font-family: 'Roboto', 'sans-serif';
+  font-size: .8rem;
+  transition: background-color .25s ease-in;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+button {
+  display: inline-block;
+  background: #eb1e64;
+  border: 2px solid #F56293;
+  border-radius: 4px;
+  padding: .4rem 1rem;
+  color: #fff;
+  font-family: 'Roboto', 'sans-serif';
+  font-size: .8rem;
+  cursor: pointer;
+  transition: all .1s ease-in;
+}
+
+a { color: white }
+
+button:focus {
+  outline: none;
+  background: #BF2155;
+}
+
+button:active {
+  transform: translateY(1px) scale(.9, .9);
+  background: #BF2155;
+}

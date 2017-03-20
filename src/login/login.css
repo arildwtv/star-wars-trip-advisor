@@ -1,0 +1,28 @@
+.login-section {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.login-error {
+  color: #e67676;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.current-user-section {
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 1rem;
+  color: #fff;
+  background: #202634;
+}
+
+.current-user-email {
+  display: inline-block;
+}
+
+.current-user-email + button {
+  margin-left: .5rem;
+}

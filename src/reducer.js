@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
+import loginReducer from './login/reducer';
 import planetsReducer from './planets/reducer';
-import peopleReducer from './people/reducer';
 
 export default combineReducers({
   routing: routerReducer,
-  planets: planetsReducer,
-  people: peopleReducer
+  login: loginReducer,
+  planets: planetsReducer
 });
