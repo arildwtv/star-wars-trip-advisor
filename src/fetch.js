@@ -7,9 +7,7 @@ const extendedFetch = (url, init) =>
   fetch(`${url}?auth=${accessToken}`, init);
 
 firebase.auth().onAuthStateChanged(user => {
-  if (user) {
-    accessToken = user.Nd;
-  }
+  accessToken = user ? user.Nd : undefined;
 });
 
 export default extendedFetch;
