@@ -1,4 +1,12 @@
 .app-title {
+  margin: 0;
+  padding: .5rem;
   font-size: 3rem;
   text-align: center;
+}
+
+.app-image {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
 }
